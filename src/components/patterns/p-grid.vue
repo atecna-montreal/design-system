@@ -23,8 +23,8 @@
 
 <script>
 export default {
-  props: { blok: { type: Object, default: () => {} } }
-}
+  props: { blok: { type: Object, default: () => {} } },
+};
 </script>
 
 <style scoped>

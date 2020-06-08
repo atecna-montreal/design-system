@@ -20,8 +20,8 @@ export default {
   props: {
     blok: {
       type: Object,
-      default: () => ({})
-    }
-  }
-}
+      default: () => ({}),
+    },
+  },
+};
 </script>

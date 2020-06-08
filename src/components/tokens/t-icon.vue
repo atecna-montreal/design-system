@@ -1,10 +1,6 @@
 <template>
   <div>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      style="position:absolute;width:0;height:0;visibility:hidden"
-    >
+    <svg style="position:absolute;width:0;height:0;visibility:hidden">
       <defs>
         <symbol id="arrow_forward" viewBox="0 0 20 20">
           <path
@@ -25,13 +21,13 @@ export default {
   props: {
     type: {
       type: String,
-      default: null
-    }
+      default: null,
+    },
   },
   computed: {
     href() {
-      return `#${this.type}`
-    }
-  }
-}
+      return `#${this.type}`;
+    },
+  },
+};
 </script>
