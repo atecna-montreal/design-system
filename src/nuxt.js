@@ -1,6 +1,6 @@
-const { join } = require("path");
+import { join } from "path";
 
-module.exports = function() {
+export default function() {
   this.nuxt.hook("components:dirs", (dirs) => {
     dirs.push({
       path: join(__dirname, "components/elements"),
@@ -22,4 +22,4 @@ module.exports = function() {
       prefix: "t-",
     });
   });
-};
+}
