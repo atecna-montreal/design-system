@@ -1,7 +1,7 @@
 {
   "name": "design-system",
   "version": "0.1.0",
-  "main": "src/main.js",
+  "main": "dist/design-system.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
