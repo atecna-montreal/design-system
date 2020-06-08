@@ -1,8 +1,4 @@
-import Vue from "vue";
-import App from "./App.vue";
-
-Vue.config.productionTip = false;
-
-new Vue({
-  render: h => h(App)
-}).$mount("#app");
+export * from "./components/tokens/index";
+export * from "./components/elements/index";
+export * from "./components/patterns/index";
+export * from "./components/templates/index";
