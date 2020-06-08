@@ -1,4 +1,14 @@
-export * from "./components/tokens/index";
-export * from "./components/elements/index";
-export * from "./components/patterns/index";
-export * from "./components/templates/index";
+export { default as EDescriptiveBlock } from "./components/elements/descriptive-block.vue";
+export { default as EFeature } from "./components/elements/feature.vue";
+export { default as PFooter } from "./components/patterns/footer.vue";
+export { default as PGrid } from "./components/patterns/grid.vue";
+export { default as PHeaderNavigation } from "./components/patterns/header-navigation.vue";
+export { default as PHeader } from "./components/patterns/header.vue";
+export { default as PLangSwitcher } from "./components/patterns/lang-switcher.vue";
+export { default as PPresentation } from "./components/patterns/presentation.vue";
+export { default as PSitemapItem } from "./components/patterns/sitemap-item.vue";
+export { default as PTeaser } from "./components/patterns/teaser.vue";
+export { default as TpPage } from "./components/templates/page.vue";
+export { default as TButton } from "./components/tokens/button.vue";
+export { default as TIcon } from "./components/tokens/icon.vue";
+export { default as TLogo } from "./components/tokens/logo.vue";

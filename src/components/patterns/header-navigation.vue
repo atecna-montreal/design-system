@@ -38,7 +38,7 @@
       >
         {{ navitem.name }} <t-icon type="arrow_forward" class="lg:hidden" />
       </nuxt-link>
-      <p-lang-switcher />
+      <!-- <p-lang-switcher /> -->
     </nav>
   </div>
 </template>
@@ -47,63 +47,63 @@
 export default {
   data() {
     return {
-      showContactLink: false
-    }
+      showContactLink: false,
+    };
   },
   computed: {
     open() {
-      return this.$store.state.navIsOpen
+      return this.$store.state.navIsOpen;
     },
     contactLink() {
       return this.$store.state.settings.main_navi.find(
-        (item) => item.component === 'Contact Item'
-      )
+        (item) => item.component === "Contact Item"
+      );
     },
     navItems() {
       return this.$store.state.settings.main_navi.filter(
-        (item) => item.component !== 'Contact Item'
-      )
-    }
+        (item) => item.component !== "Contact Item"
+      );
+    },
   },
   mounted() {
-    window.addEventListener('scroll', this.onScroll)
+    window.addEventListener("scroll", this.onScroll);
   },
   beforeDestroy() {
-    window.removeEventListener('scroll', this.onScroll)
+    window.removeEventListener("scroll", this.onScroll);
   },
   methods: {
     navIsOpen(status) {
-      this.$store.commit('setNavIsOpen', status)
+      this.$store.commit("setNavIsOpen", status);
     },
     onScroll() {
       const currentScrollPosition =
-        window.pageYOffset || document.documentElement.scrollTop
+        window.pageYOffset || document.documentElement.scrollTop;
       if (currentScrollPosition < 0) {
-        return
+        return;
       }
       if (currentScrollPosition < 120) {
-        this.showContactLink = false
-        return
+        this.showContactLink = false;
+        return;
       }
-      this.showContactLink = true
-    }
+      this.showContactLink = true;
+    },
   },
   head() {
     return {
       bodyAttrs: {
         class: this.$store.state.navIsOpen
-          ? 'overflow-hidden lg:overflow-auto'
-          : ''
-      }
-    }
-  }
-}
+          ? "overflow-hidden lg:overflow-auto"
+          : "",
+      },
+    };
+  },
+};
 </script>
 
 <style scoped>
 @media (min-width: 1024px) {
   .nav-link:not(:last-of-type)::after {
-    content: '•';
+    content: "•";
     margin-left: 1rem;
   }
 }
