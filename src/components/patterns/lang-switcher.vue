@@ -1,8 +1,5 @@
 <template>
-  <nav
-    v-on-clickaway="away"
-    class="relative mx-10 lg:mx-0 lg:flex lg:items-center"
-  >
+  <nav class="relative mx-10 lg:mx-0 lg:flex lg:items-center">
     <button
       class="w-full lg:flex items-center lg:ml-8"
       @click="dropdownIsVisible = !dropdownIsVisible"
@@ -46,7 +43,7 @@
         :to="switchLocalePath(locale.code)"
         class="block lg:px-4 py-1"
         :class="{
-          'bg-bgneutral-primary': locale.code === $i18n.locale
+          'bg-bgneutral-primary': locale.code === $i18n.locale,
         }"
         @click.native="loadSettings(locale.code)"
       >
@@ -57,29 +54,27 @@
 </template>
 
 <script>
-import { mixin as clickaway } from 'vue-clickaway'
 export default {
-  mixins: [clickaway],
   data() {
     return {
       dropdownIsVisible: false,
       currentLocale: this.$i18n.locales.find(
         (locale) => locale.code === this.$i18n.locale
-      )
-    }
+      ),
+    };
   },
   methods: {
     loadSettings(locale) {
-      this.$store.dispatch('loadSettings', {
+      this.$store.dispatch("loadSettings", {
         version: this.$store.version,
-        locale
-      })
+        locale,
+      });
     },
     away() {
-      this.dropdownIsVisible = false
-    }
-  }
-}
+      this.dropdownIsVisible = false;
+    },
+  },
+};
 </script>
 
 <style scoped>
