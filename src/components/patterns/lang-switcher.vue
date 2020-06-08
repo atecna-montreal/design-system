@@ -5,7 +5,7 @@
       @click="dropdownIsVisible = !dropdownIsVisible"
     >
       <span class="hidden capitalize lg:flex lg:items-center">
-        {{ $i18n.locale }}
+        {{ currentLocale }}
         <svg
           class="ml-2"
           width="10"
@@ -38,12 +38,12 @@
       :class="{ hidden: !dropdownIsVisible }"
     >
       <nuxt-link
-        v-for="locale in $i18n.locales"
+        v-for="locale in locales"
         :key="locale.code"
         :to="switchLocalePath(locale.code)"
         class="block lg:px-4 py-1"
         :class="{
-          'bg-bgneutral-primary': locale.code === $i18n.locale,
+          'bg-bgneutral-primary': locale.code === currentLocale,
         }"
         @click.native="loadSettings(locale.code)"
       >
@@ -55,12 +55,19 @@
 
 <script>
 export default {
+  props: {
+    locales: {
+      type: Array,
+      required: true,
+    },
+    currentLocale: {
+      type: String,
+      required: true,
+    },
+  },
   data() {
     return {
       dropdownIsVisible: false,
-      currentLocale: this.$i18n.locales.find(
-        (locale) => locale.code === this.$i18n.locale
-      ),
     };
   },
   methods: {
