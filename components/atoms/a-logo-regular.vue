@@ -1,11 +1,5 @@
 <template>
-  <svg
-    class="w-full h-auto max-h-full"
-    viewBox="0 0 401 77"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-  >
+  <svg width="401" height="77" viewBox="0 0 401 77">
     <title>Logo_ATECNA</title>
     <g
       id="Page-1"
@@ -14,7 +8,7 @@
       fill="none"
       fill-rule="evenodd"
     >
-      <g id="Logo_ATECNA" fill="#FF6C58" fill-rule="nonzero">
+      <g id="Logo_ATECNA" :fill="getColor()" fill-rule="nonzero">
         <polygon
           id="Path"
           points="123.7 17.6 123.7 0.7 63.3 0.7 63.3 17.6 84.1 17.6 84.6 17.6 84.6 18.1 84.6 76.2 102.5 76.2 102.5 18.1 102.5 17.6 103 17.6"
@@ -43,3 +37,46 @@
     </g>
   </svg>
 </template>
+
+<script>
+export default {
+  props: {
+    black: {
+      type: Boolean,
+      default: true,
+    },
+    orange: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  methods: {
+    getColor() {
+      if (this.orange) return "#FF6C58";
+      if (this.black) return "#000000";
+    },
+  },
+};
+</script>
+
+<docs>
+<a-logo-regular />
+<a-logo-regular orange/>
+<a-logo-regular orange style="width: 100px;"/>
+
+```vue live
+<a-logo-regular orange/>
+<a-logo-regular />
+
+// you can easy override the width
+<a-logo-regular orange style="width: 100px;"/>
+
+```
+</docs>
+
+<style scoped>
+svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+</style>

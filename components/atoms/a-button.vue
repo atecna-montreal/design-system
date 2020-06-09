@@ -1,11 +1,17 @@
 <template>
   <button class="button" :class="regroupClass()">
-    <slot />
+    <a-button-text>
+      <slot />
+    </a-button-text>
   </button>
 </template>
 
 <script>
+import AButtonText from "./a-button-text";
 export default {
+  components: {
+    AButtonText,
+  },
   props: {
     primary: {
       default: true,
