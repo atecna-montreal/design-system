@@ -17,7 +17,7 @@
 // export { default as TIcon } from "./components/tokens/icon.vue";
 // export { default as TLogo } from "./components/tokens/logo.vue";
 
-export { default as AH1 } from "./components/atoms/h1.vue";
+export { default as AH1 } from "./components/atoms/a-h1.vue";
 
 // export * from "./tailwind";
 // export { default as tailwind } from "./tailwind";
