@@ -15,41 +15,41 @@ export default {
   props: {
     onClick: {
       type: Function,
-      default: null
+      default: null,
     },
     href: {
       type: String,
-      default: null
+      default: null,
     },
     to: {
       type: String,
-      default: null
+      default: null,
     },
     primary: Boolean,
-    tertiary: Boolean
+    tertiary: Boolean,
   },
   computed: {
     type() {
       if (this.to) {
-        return 'nuxt-link'
+        return "nuxt-link";
       } else if (this.href) {
-        return 'a'
+        return "a";
       } else {
-        return 'button'
+        return "button";
       }
     },
     classes() {
       return {
         ...this.class,
         btn: true,
-        'btn-primary': this.primary,
-        'btn-secondary': this.secondary,
-        'btn-tertiary': this.tertiary
-      }
+        "btn-primary": this.primary,
+        "btn-secondary": this.secondary,
+        "btn-tertiary": this.tertiary,
+      };
     },
     event() {
-      return this.onClick ? 'click' : null
-    }
-  }
-}
+      return this.onClick ? "click" : null;
+    },
+  },
+};
 </script>
