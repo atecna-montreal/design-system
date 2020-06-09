@@ -13,6 +13,14 @@ h1 {
   font-size: 3.5rem;
   line-height: 4.25rem;
 }
+
+.medium {
+  font-weight: 500;
+}
+
+.light {
+  font-weight: 300;
+}
 </style>
 
 <docs>

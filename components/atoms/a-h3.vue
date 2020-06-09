@@ -1,19 +1,19 @@
 <template>
-  <h4><slot /></h4>
+  <h3><slot /></h3>
 </template>
 
 <style scoped>
-h4 {
+h3 {
   font-style: normal;
   font-weight: normal;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 </style>
 
 <docs>
-<a-h4>H4 Title</a-h4>
+<a-h3>H3 Title</a-h3>
 ```vue live
-  <a-h4>H4 Title</a-h4>
+  <a-h3>H3 Title</a-h3>
 ```
 </docs>
