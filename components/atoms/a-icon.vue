@@ -11,7 +11,7 @@ import gift from "../../svgs/gift";
 import layer from "../../svgs/layer";
 import performance from "../../svgs/performance";
 import team from "../../svgs/team";
-import time from "../../svgs/time";
+import timing from "../../svgs/timing";
 import training from "../../svgs/training";
 import training_2 from "../../svgs/training_2";
 import training_3 from "../../svgs/training_3";
@@ -29,7 +29,7 @@ export default {
     layer,
     performance,
     team,
-    time,
+    timing,
     training,
     training_2,
     training_3,
@@ -53,7 +53,7 @@ export default {
             "layer",
             "performance",
             "team",
-            "time",
+            "timing",
             "training",
             "training_2",
             "training_3",
@@ -79,7 +79,7 @@ export default {
 <a-icon name="layer"  style="width: 32px;"/>
 <a-icon name="team"  style="width: 32px;"/>
 <a-icon name="user"  style="width: 32px;"/>
-<a-icon name="time"  style="width: 32px;"/>
+<a-icon name="timing"  style="width: 32px;"/>
 <br />
 <h5> Icones round </h5>
 <br />
@@ -107,7 +107,7 @@ export default {
 <a-icon name="layer"  style="width: 32px;"/>
 <a-icon name="team"  style="width: 32px;"/>
 <a-icon name="user"  style="width: 32px;"/>
-<a-icon name="time"  style="width: 32px;"/>
+<a-icon name="timing"  style="width: 32px;"/>
 
 // basic
 <a-icon name="emerald"  style="width: 32px;"/>

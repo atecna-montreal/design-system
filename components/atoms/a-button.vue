@@ -10,37 +10,37 @@
 import AButtonText from "./a-button-text";
 export default {
   components: {
-    AButtonText,
+    AButtonText
   },
   props: {
     primary: {
       default: true,
-      type: Boolean,
+      type: Boolean
     },
     secondary: {
       default: false,
-      type: Boolean,
+      type: Boolean
     },
     tertiary: {
       default: false,
-      type: Boolean,
+      type: Boolean
     },
     quaternary: {
       default: false,
-      type: Boolean,
+      type: Boolean
     },
     small: {
       default: false,
-      type: Boolean,
+      type: Boolean
     },
     medium: {
       default: true,
-      type: Boolean,
+      type: Boolean
     },
     large: {
       default: false,
-      type: Boolean,
-    },
+      type: Boolean
+    }
   },
   methods: {
     regroupClass() {
@@ -56,8 +56,8 @@ export default {
       if (this.small) return "small";
       if (this.large) return "large";
       if (this.medium) return "medium";
-    },
-  },
+    }
+  }
 };
 </script>
 

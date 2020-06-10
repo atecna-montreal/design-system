@@ -1,5 +1,7 @@
 <template>
-  <p class="interface" :class="getSize()"><slot /></p>
+  <p class="interface" :class="getSize()">
+    <slot />
+  </p>
 </template>
 
 <script>
@@ -7,24 +9,24 @@ export default {
   props: {
     light: {
       type: Boolean,
-      default: false,
+      default: false
     },
     regular: {
       type: Boolean,
-      default: true,
+      default: true
     },
     medium: {
       type: Boolean,
-      default: false,
-    },
+      default: false
+    }
   },
   methods: {
     getSize() {
       if (this.light) return "light";
       if (this.medium) return "medium";
       if (this.regular) return "regular";
-    },
-  },
+    }
+  }
 };
 </script>
 
