@@ -5,9 +5,13 @@
     </div>
     <div class="card-right">
       <a-h3>{{ card.title }}</a-h3>
-      <a-interface-regular class="card-right-content">{{ card.content }}</a-interface-regular>
+      <a-interface-regular class="card-right-content">{{
+        card.content
+      }}</a-interface-regular>
       <a-interface-regular v-html="card.list" class="card-right-list" />
-      <a-button @click.native="$emit('actionClicked')" secondary>{{ card.button_text }}</a-button>
+      <a-button @click.native="$emit('actionClicked')" secondary>{{
+        card.button_text
+      }}</a-button>
     </div>
   </div>
 </template>
