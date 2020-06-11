@@ -3652,58 +3652,6 @@ var m_card_expertise_right_component = normalizeComponent(
 if (typeof m_card_expertise_rightvue_type_custom_index_0_blockType_docs_default.a === 'function') m_card_expertise_rightvue_type_custom_index_0_blockType_docs_default()(m_card_expertise_right_component)
 
 /* harmony default export */ var m_card_expertise_right = (m_card_expertise_right_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"77d9030c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/organisms/o-header.vue?vue&type=template&id=5048a31b&
-var o_headervue_type_template_id_5048a31b_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('header',{staticClass:"px-4 py-8 fixed w-full top-0 left-0 z-50 bg-bgneutral-primary flex items-center justify-between lg:px-8"},[_c('nuxt-link',{staticClass:"h-4 lg:h-6",attrs:{"to":_vm.localePath("/"),"exact":""}},[_c('t-logo')],1)],1)}
-var o_headervue_type_template_id_5048a31b_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./components/organisms/o-header.vue?vue&type=template&id=5048a31b&
-
-// CONCATENATED MODULE: ./components/organisms/o-header.vue
-
-var o_header_script = {}
-
-
-/* normalize component */
-
-var o_header_component = normalizeComponent(
-  o_header_script,
-  o_headervue_type_template_id_5048a31b_render,
-  o_headervue_type_template_id_5048a31b_staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* harmony default export */ var o_header = (o_header_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"77d9030c-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/organisms/o-footer.vue?vue&type=template&id=4e9cf990&
-var o_footervue_type_template_id_4e9cf990_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"bg-neutral1-quaternary pt-4 pb-8 text-center"},[_c('div',{staticClass:"util__container"},[_c('nuxt-link',{staticClass:"text-neutral1-secondary",attrs:{"to":_vm.localePath("/sitemap")}},[_vm._v(" Sitemap ")])],1)])}
-var o_footervue_type_template_id_4e9cf990_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./components/organisms/o-footer.vue?vue&type=template&id=4e9cf990&
-
-// CONCATENATED MODULE: ./components/organisms/o-footer.vue
-
-var o_footer_script = {}
-
-
-/* normalize component */
-
-var o_footer_component = normalizeComponent(
-  o_footer_script,
-  o_footervue_type_template_id_4e9cf990_render,
-  o_footervue_type_template_id_4e9cf990_staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* harmony default export */ var o_footer = (o_footer_component.exports);
 // CONCATENATED MODULE: ./main.js
 // ATOMS
 
@@ -3720,9 +3668,6 @@ var o_footer_component = normalizeComponent(
 
 
  // MOLECULES
-
-
- // ORGANISMS
 
 
  // Declare install function executed by Vue.use()
@@ -3746,8 +3691,6 @@ function install(Vue) {
   Vue.component("AButtonText", a_button_text);
   Vue.component("MCardExpertiseLeft", m_card_expertise_left);
   Vue.component("MCardExpertiseRight", m_card_expertise_right);
-  Vue.component("OFooter", o_header);
-  Vue.component("OHeader", o_footer);
 }
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib-no-default.js
 

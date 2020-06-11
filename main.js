@@ -20,11 +20,6 @@ import AButtonText from "./components/atoms/a-button-text.vue";
 import MCardExpertiseLeft from "./components/molecules/m-card-expertise-left.vue";
 import MCardExpertiseRight from "./components/molecules/m-card-expertise-right.vue";
 
-// ORGANISMS
-
-import OFooter from "./components/organisms/o-header.vue";
-import OHeader from "./components/organisms/o-footer.vue";
-
 // Declare install function executed by Vue.use()
 export function install(Vue) {
   if (install.installed) return;
@@ -45,6 +40,4 @@ export function install(Vue) {
   Vue.component("AButtonText", AButtonText);
   Vue.component("MCardExpertiseLeft", MCardExpertiseLeft);
   Vue.component("MCardExpertiseRight", MCardExpertiseRight);
-  Vue.component("OFooter", OFooter);
-  Vue.component("OHeader", OHeader);
 }
