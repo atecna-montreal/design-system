@@ -5,6 +5,6 @@
     <nuxt-link :to="localePath(`/`)" exact class="h-4 lg:h-6">
       <t-logo />
     </nuxt-link>
-    <p-header-navigation />
+    <!-- <p-header-navigation /> -->
   </header>
 </template>

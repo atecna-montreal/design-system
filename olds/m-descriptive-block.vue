@@ -16,7 +16,7 @@ export default {
   computed: {
     description() {
       return this.block.description && marked(this.block.description);
-    },
-  },
+    }
+  }
 };
 </script>
