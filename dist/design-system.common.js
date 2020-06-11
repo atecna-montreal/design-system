@@ -2070,24 +2070,7 @@ module.exports = function (key) {
 __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
-__webpack_require__.d(__webpack_exports__, "AH1", function() { return /* reexport */ a_h1; });
-__webpack_require__.d(__webpack_exports__, "AH2", function() { return /* reexport */ a_h2; });
-__webpack_require__.d(__webpack_exports__, "AH3", function() { return /* reexport */ a_h3; });
-__webpack_require__.d(__webpack_exports__, "AH4", function() { return /* reexport */ a_h4; });
-__webpack_require__.d(__webpack_exports__, "AH5", function() { return /* reexport */ a_h5; });
-__webpack_require__.d(__webpack_exports__, "AIcon", function() { return /* reexport */ a_icon; });
-__webpack_require__.d(__webpack_exports__, "AInterfaceMedium", function() { return /* reexport */ a_interface_medium; });
-__webpack_require__.d(__webpack_exports__, "AInterfaceRegular", function() { return /* reexport */ a_interface_regular; });
-__webpack_require__.d(__webpack_exports__, "AInterfaceSmall", function() { return /* reexport */ a_interface_small; });
-__webpack_require__.d(__webpack_exports__, "ALinkRegular", function() { return /* reexport */ a_link_regular; });
-__webpack_require__.d(__webpack_exports__, "ALogoRegular", function() { return /* reexport */ a_logo_regular; });
-__webpack_require__.d(__webpack_exports__, "ALogoImage", function() { return /* reexport */ a_logo_image; });
-__webpack_require__.d(__webpack_exports__, "AButton", function() { return /* reexport */ a_button; });
-__webpack_require__.d(__webpack_exports__, "AButtonText", function() { return /* reexport */ a_button_text; });
-__webpack_require__.d(__webpack_exports__, "MCardExpertiseLeft", function() { return /* reexport */ m_card_expertise_left; });
-__webpack_require__.d(__webpack_exports__, "MCardExpertiseRight", function() { return /* reexport */ m_card_expertise_right; });
-__webpack_require__.d(__webpack_exports__, "OFooter", function() { return /* reexport */ o_header; });
-__webpack_require__.d(__webpack_exports__, "OHeader", function() { return /* reexport */ o_footer; });
+__webpack_require__.d(__webpack_exports__, "install", function() { return /* reexport */ install; });
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 // This file is imported into lib/wc client bundles.
@@ -3742,7 +3725,30 @@ var o_footer_component = normalizeComponent(
  // ORGANISMS
 
 
+ // Declare install function executed by Vue.use()
 
+function install(Vue) {
+  if (install.installed) return;
+  install.installed = true;
+  Vue.component("AH1", a_h1);
+  Vue.component("AH2", a_h2);
+  Vue.component("AH3", a_h3);
+  Vue.component("AH4", a_h4);
+  Vue.component("AH5", a_h5);
+  Vue.component("AIcon", a_icon);
+  Vue.component("AInterfaceMedium", a_interface_medium);
+  Vue.component("AInterfaceRegular", a_interface_regular);
+  Vue.component("AInterfaceSmall", a_interface_small);
+  Vue.component("ALinkRegular", a_link_regular);
+  Vue.component("ALogoRegular", a_logo_regular);
+  Vue.component("ALogoImage", a_logo_image);
+  Vue.component("AButton", a_button);
+  Vue.component("AButtonText", a_button_text);
+  Vue.component("MCardExpertiseLeft", m_card_expertise_left);
+  Vue.component("MCardExpertiseRight", m_card_expertise_right);
+  Vue.component("OFooter", o_header);
+  Vue.component("OHeader", o_footer);
+}
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib-no-default.js
 
 
